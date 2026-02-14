@@ -11,6 +11,11 @@
 		</run>
 	</groups>
 
+	<listeners>
+		<listener
+			class-name="com.orangeHRM.qa.utilities.ExtentReportManager" />
+	</listeners>
+
 	<test name="Test">
 		<parameter name="browser" value="chrome" />
 		<parameter name="os" value="windows" />
