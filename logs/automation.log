@@ -1,0 +1,21 @@
+01:34:42.816 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Automation_Projects\OrangeHRM_TestAutomationProject\testng.xml
+
+01:34:43.476 [main] INFO  com.orangeHRM.qa.testCases.VerifyLoginPageTest - Initializing WebDriver and launching the application.
+01:34:58.145 [main] INFO  com.orangeHRM.qa.testCases.VerifyLoginPageTest - Starting test case: TC001_verifyLoginPageTitle
+01:34:58.256 [main] INFO  com.orangeHRM.qa.testCases.VerifyLoginPageTest - Verifying login page title. Expected: OrangeHRM, Actual: OrangeHRM
+01:34:58.774 [main] INFO  com.orangeHRM.qa.testCases.VerifyLoginPageTest - Initializing WebDriver and launching the application.
+01:35:07.497 [main] INFO  com.orangeHRM.qa.testCases.VerifyLoginPageTest - Starting test case: TC002_verifyLoginFunctionality
+01:35:11.646 [main] INFO  com.orangeHRM.qa.testCases.VerifyLoginPageTest - Verifying dashboard page header. Expected: Dashboard, Actual: Dashboard
+01:35:13.892 [main] INFO  com.orangeHRM.qa.testCases.VerifyLoginPageTest - Initializing WebDriver and launching the application.
+01:35:25.251 [main] INFO  com.orangeHRM.qa.testCases.VerifyLoginPageTest - Starting test case: TC003_verifyValidAndInvalidLoginFunctionality
+01:35:33.959 [main] INFO  com.orangeHRM.qa.testCases.VerifyLoginPageTest - Initializing WebDriver and launching the application.
+01:35:49.530 [main] INFO  com.orangeHRM.qa.testCases.VerifyLoginPageTest - Starting test case: TC003_verifyValidAndInvalidLoginFunctionality
+01:36:02.986 [main] INFO  com.orangeHRM.qa.testCases.VerifyLoginPageTest - Initializing WebDriver and launching the application.
+01:36:10.847 [main] INFO  com.orangeHRM.qa.testCases.VerifyLoginPageTest - Starting test case: TC003_verifyValidAndInvalidLoginFunctionality
+01:36:25.562 [main] INFO  com.orangeHRM.qa.testCases.VerifyLoginPageTest - Initializing WebDriver and launching the application.
+01:36:34.326 [main] INFO  com.orangeHRM.qa.testCases.VerifyLoginPageTest - Starting test case: TC003_verifyValidAndInvalidLoginFunctionality
+01:36:47.056 [main] INFO  com.orangeHRM.qa.testCases.VerifyLoginPageTest - Initializing WebDriver and launching the application.
+01:36:57.496 [main] INFO  com.orangeHRM.qa.testCases.VerifyLoginPageTest - Starting test case: TC003_verifyValidAndInvalidLoginFunctionality
+01:37:06.928 [main] INFO  com.orangeHRM.qa.testCases.VerifyLoginPageTest - Initializing WebDriver and launching the application.
+01:37:17.027 [main] INFO  com.orangeHRM.qa.testCases.VerifyLoginPageTest - Starting test case: TC004_verifyInvalidLoginErrorMessage

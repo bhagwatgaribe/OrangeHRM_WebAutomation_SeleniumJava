@@ -9,33 +9,42 @@ public class LoginPage extends BasePage {
 	public LoginPage(WebDriver driver) {
 		super(driver);
 	}
-	
+
 	public String getLoginPageTitle() {
 		return driver.getTitle();
 	}
-	
+
 	@FindBy(name = "username")
 	public WebElement txtUserName;
-	
+
 	@FindBy(name = "password")
 	public WebElement txtPassword;
-	
+
 	@FindBy(xpath = "//button[@type='submit']")
 	public WebElement loginBtn;
-	
+
+	@FindBy(xpath = "//p[text()='Invalid credentials']")
+	public WebElement invalidCredentialsMsg;
+
 	public void setUserName(String username) {
 		WebElement el = waitHelper.waitForElementToBeVisible(txtUserName, 10);
 		el.clear();
 		el.sendKeys(username == null ? "" : username.trim());
 	}
-	
+
 	public void setPassword(String password) {
 		WebElement el = waitHelper.waitForElementToBeVisible(txtPassword, 10);
 		el.clear();
 		el.sendKeys(password == null ? "" : password.trim());
 	}
-	
+
 	public void clickLoginBtn() {
 		waitHelper.waitForElementToBeClickable(loginBtn, 10).click();
 	}
+
+	public String isInvalidCredentialsMessageDisplayed() {
+		waitHelper.waitForElementToBeVisible(invalidCredentialsMsg, 10);
+		return invalidCredentialsMsg.getText();
+	}
+
 }
