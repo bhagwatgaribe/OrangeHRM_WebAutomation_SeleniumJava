@@ -11,9 +11,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
 
 public class BaseClass {
 
@@ -22,8 +22,7 @@ public class BaseClass {
 	public Properties prop;
 
 	@BeforeMethod(groups = {"Regression", "Sanity", "Master", "DataDriven"})
-	@Parameters({ "os", "browser" })
-	public void setup(String os, String browser) throws IOException {
+	public void setup(ITestContext context) throws IOException {
 
 		logger = LogManager.getLogger(this.getClass());
 		FileReader fileReader = new FileReader("./src//test//resources//config.properties");
@@ -40,6 +39,21 @@ public class BaseClass {
 		}
 
 		logger.info("Initializing WebDriver and launching the application.");
+
+		// Read parameters from TestNG suite if present, otherwise fall back to config.properties
+		String browser = null;
+		String os = null;
+		if (context != null && context.getCurrentXmlTest() != null) {
+			browser = context.getCurrentXmlTest().getParameter("browser");
+			os = context.getCurrentXmlTest().getParameter("os");
+		}
+
+		if (browser == null || browser.trim().isEmpty()) {
+			browser = prop.getProperty("browser", "chrome").trim();
+		}
+		if (os == null || os.trim().isEmpty()) {
+			os = prop.getProperty("os", "windows").trim();
+		}
 
 		switch (browser.toLowerCase()) {
 		case "chrome":
