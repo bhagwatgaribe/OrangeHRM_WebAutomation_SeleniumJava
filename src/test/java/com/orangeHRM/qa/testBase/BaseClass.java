@@ -21,7 +21,7 @@ public class BaseClass {
 	public Logger logger;
 	public Properties prop;
 
-	@BeforeMethod
+	@BeforeMethod(groups = {"Regression", "Sanity", "Master", "DataDriven"})
 	@Parameters({ "os", "browser" })
 	public void setup(String os, String browser) throws IOException {
 
@@ -65,7 +65,7 @@ public class BaseClass {
 		driver.manage().window().maximize();
 	}
 
-	@AfterMethod
+	@AfterMethod(groups = {"Regression", "Sanity", "Master", "DataDriven"})
 	public void tearDown() {
 		driver.quit();
 	}

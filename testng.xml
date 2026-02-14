@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite thread-count="2" parallel="classes" name="Suite">
+<suite name="Suite">
+	<groups>
+		<run>
+			<include name="Sanity" />
+			<include name="Regression" />
+			<include name="Master" />
+			<include name="DataDriven" />
+		</run>
+	</groups>
+
 	<test name="Test">
-	<parameter name="browser" value="chrome" />
-	<parameter name="os" value="windows" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="os" value="windows" />
 		<classes>
 			<class name="com.orangeHRM.qa.testCases.VerifyLoginPageTest" />
 		</classes>

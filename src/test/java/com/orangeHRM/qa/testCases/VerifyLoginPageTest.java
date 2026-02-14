@@ -10,7 +10,7 @@ import com.orangeHRM.qa.utilities.DataProviders;
 
 public class VerifyLoginPageTest extends BaseClass {
 
-	@Test
+	@Test(groups = {"Regression", "Master"})
 	public void TC001_verifyLoginPageTitle() {
 
 		logger.info("Starting test case: TC001_verifyLoginPageTitle");
@@ -27,7 +27,7 @@ public class VerifyLoginPageTest extends BaseClass {
 		}
 	}
 
-	@Test
+	@Test(groups = {"Sanity", "Master"})
 	public void TC002_verifyValidLoginFunctionality() {
 
 		logger.info("Starting test case: TC002_verifyLoginFunctionality");
@@ -58,7 +58,7 @@ public class VerifyLoginPageTest extends BaseClass {
 	 * Login successful, Test Failed
 	 */
 
-	@Test(dataProvider = "LoginData", dataProviderClass = DataProviders.class)
+	@Test(dataProvider = "LoginData", dataProviderClass = DataProviders.class, groups = {"DataDriven", "Master"})
 	public void TC003_verifyValidAndInvalidLoginFunctionality(String username, String password, String expectedResult) {
 
 		logger.info("Starting test case: TC003_verifyValidAndInvalidLoginFunctionality");
