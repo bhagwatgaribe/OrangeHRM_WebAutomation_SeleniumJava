@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="2" parallel="classes" name="Suite">
+	<test name="Test">
+	<parameter name="browser" value="chrome" />
+	<parameter name="os" value="windows" />
+		<classes>
+			<class name="com.orangeHRM.qa.testCases.VerifyLoginPageTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
