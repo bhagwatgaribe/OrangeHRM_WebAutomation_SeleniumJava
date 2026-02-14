@@ -1,6 +1,7 @@
 package com.orangeHRM.qa.utilities;
 
 import java.awt.Desktop;
+import java.awt.GraphicsEnvironment;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -43,10 +44,16 @@ public class ExtentReportManager implements ITestListener {
 		extent.setSystemInfo("User Name", System.getProperty("user.name"));
 		extent.setSystemInfo("Environment", "QA");
 
-		String os = testContext.getCurrentXmlTest().getParameter("os");
+		String os = null;
+		if (testContext != null && testContext.getCurrentXmlTest() != null) {
+			os = testContext.getCurrentXmlTest().getParameter("os");
+		}
 		extent.setSystemInfo("Operating System", os);
 
-		String browser = testContext.getCurrentXmlTest().getParameter("browser");
+		String browser = null;
+		if (testContext != null && testContext.getCurrentXmlTest() != null) {
+			browser = testContext.getCurrentXmlTest().getParameter("browser");
+		}
 		extent.setSystemInfo("Browser", browser);
 
 		List<String> includeGroups = testContext.getCurrentXmlTest().getIncludedGroups();
@@ -101,26 +108,24 @@ public class ExtentReportManager implements ITestListener {
 		String pathOfExtentreport = System.getProperty("user.dir") + "\\reports\\" + repName;
 		File extentReport = new File(pathOfExtentreport);
 
+		boolean opened = false;
 		try {
-			Desktop.getDesktop().browse(extentReport.toURI());
+			// Only attempt to open the HTML report if Desktop is supported and the
+			// environment is not headless (CI agents are typically headless)
+			if (Desktop.isDesktopSupported() && !GraphicsEnvironment.isHeadless()) {
+				Desktop desktop = Desktop.getDesktop();
+				if (desktop.isSupported(Desktop.Action.BROWSE)) {
+					desktop.browse(extentReport.toURI());
+					opened = true;
+				}
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
-		/*
-		 * try { URL url = new URL("file:///" + System.getProperty("user.dir") +
-		 * "\\reports\\" + repName); ImageHtmlEmail email = new ImageHtmlEmail();
-		 * email.setDataSourceResolver(new DataSourceUrlResolver(url));
-		 * email.setHostName("smtp.googlemail.com"); email.setSmtpPort(465);
-		 * email.setAuthenticator(new DefaultAuthenticator("bhagwat22garibe@gmail.com",
-		 * "9423450529bug")); email.setSSLOnConnect(true);
-		 * email.setFrom("bhagwat22garibe@gmail.com");
-		 * email.setSubject("Automation Test Report");
-		 * email.setMsg("Please find Attached Report");
-		 * email.addTo("varshabiradar16@gmail.com");
-		 * email.addTo("bhag.testing@gmail.com"); email.attach(url,"extent report",
-		 * "please check report..."); email.send(); } catch (Exception e) {
-		 * e.printStackTrace(); }
-		 */
+		if (!opened) {
+			System.out.println("Extent report generated at: " + pathOfExtentreport +
+					" (not opened automatically on this environment). Please open it manually if desired.");
+			// Optionally, you could integrate sending this file via email or upload it to a shared location here.
+		}
 	}
 }
