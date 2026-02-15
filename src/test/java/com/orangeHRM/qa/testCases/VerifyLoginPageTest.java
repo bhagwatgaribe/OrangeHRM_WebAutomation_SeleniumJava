@@ -25,8 +25,9 @@ public class VerifyLoginPageTest extends BaseClass {
 			logger.info("Verifying login page title. Expected: " + expectedTitle + ", Actual: " + actualTitle);
 			Assert.assertEquals(actualTitle, expectedTitle, "Login page title does not match expected value.");
 		} catch (Exception e) {
-			logger.error("An error occurred while verifying the login page title: " + e.getMessage());
 			Assert.fail("Test case failed due to an exception: " + e.getMessage());
+		}finally {
+			logger.info("Completed test case: TC001_verifyLoginPageTitle");
 		}
 	}
 
@@ -48,8 +49,9 @@ public class VerifyLoginPageTest extends BaseClass {
 			logger.info("Verifying dashboard page header. Expected: " + expectedHeader + ", Actual: " + actualHeader);
 			Assert.assertEquals(actualHeader, expectedHeader, "Dashboard page header does not match expected value.");
 		} catch (Exception e) {
-			logger.error("An error occurred while verifying the login functionality: " + e.getMessage());
 			Assert.fail("Test case failed due to an exception: " + e.getMessage());
+		}finally {
+			logger.info("Completed test case: TC002_verifyValidLoginFunctionality");
 		}
 	}
 
@@ -95,6 +97,8 @@ public class VerifyLoginPageTest extends BaseClass {
 			}
 		} catch (Exception e) {
 			Assert.fail("Test case failed due to an exception: " + e.getMessage());
+		}finally {
+			logger.info("Completed test case: TC003_verifyValidAndInvalidLoginFunctionality");
 		}
 	}
 
@@ -116,6 +120,32 @@ public class VerifyLoginPageTest extends BaseClass {
 		} catch (Exception e) {
 
 			Assert.fail("Test case failed due to an exception: " + e.getMessage());
+		}finally {
+			logger.info("Completed test case: TC004_verifyInvalidLoginErrorMessage");
 		}
 	}
+	
+	@Test(groups = { "Regression", "Master" })
+	public void TC005_verifyForgotPasswordLink() {
+
+		logger.info("Starting test case: TC005_verifyForgotPasswordLink");
+		try {
+			loginPage = new LoginPage(driver);
+			boolean isForgotPasswordLinkDisplayed = loginPage.isForgotPasswordLinkDisplayed();
+
+			Assert.assertTrue(isForgotPasswordLinkDisplayed, "Forgot Password link is not displayed on the login page.");
+		} catch (Exception e) {
+			Assert.fail("Test case failed due to an exception: " + e.getMessage());
+		}finally {
+			logger.info("Completed test case: TC005_verifyForgotPasswordLink");
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 }

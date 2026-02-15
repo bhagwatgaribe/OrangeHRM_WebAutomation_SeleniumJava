@@ -26,6 +26,9 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath = "//p[text()='Invalid credentials']")
 	public WebElement invalidCredentialsMsg;
 
+	@FindBy(xpath = "//div[@class='orangehrm-login-forgot']/child::p")
+	public WebElement forgotPasswordLink;
+
 	public void setUserName(String username) {
 		WebElement el = waitHelper.waitForElementToBeVisible(txtUserName, 10);
 		el.clear();
@@ -47,4 +50,8 @@ public class LoginPage extends BasePage {
 		return invalidCredentialsMsg.getText();
 	}
 
+	public boolean isForgotPasswordLinkDisplayed() {
+		waitHelper.waitForElementToBeVisible(forgotPasswordLink, 10);
+		return forgotPasswordLink.isDisplayed();
+	}
 }
