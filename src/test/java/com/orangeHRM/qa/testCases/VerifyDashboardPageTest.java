@@ -54,7 +54,8 @@ public class VerifyDashboardPageTest extends BaseClass {
 
 			logger.info("Verifying all main menu items are present. Missing items: " + missing);
 
-			// If menus are missing, capture screenshot and attach to Extent report for easier debugging
+			// If menus are missing, capture screenshot and attach to Extent report for
+			// easier debugging
 			if (!missing.isEmpty()) {
 				String imgPath = null;
 				try {
@@ -85,4 +86,27 @@ public class VerifyDashboardPageTest extends BaseClass {
 		}
 	}
 
+	@Test(groups = { "Regression", "Master" })
+	public void TC007_verifyQuickLaunchOptions() {
+		logger.info("Starting test case: TC007_verifyQuickLaunchOptions");
+		try {
+			loginPage = new LoginPage(driver);
+			loginPage.setUserName(prop.getProperty("username"));
+			loginPage.setPassword(prop.getProperty("password"));
+			loginPage.clickLoginBtn();
+
+			dashboardPage = new DashboardPage(driver);
+			
+			List<String> expectedQuickLaunchOptions = Arrays.asList(
+					"Assign Leave", "Leave List", "Timesheets", 
+					"Apply Leave", "My Leave", "My Timesheet");
+			
+			List<String> actualQuickLaunchOptions = dashboardPage.getAllQuickActionNames();
+			Assert.assertEquals(actualQuickLaunchOptions.size(), expectedQuickLaunchOptions.size(),
+					"Number of quick launch options does not match expected.");
+
+		} catch (Exception e) {
+			logger.error("Failed to capture/attach screenshot for missing quick launch options: " + e.getMessage());
+		}
+	}
 }

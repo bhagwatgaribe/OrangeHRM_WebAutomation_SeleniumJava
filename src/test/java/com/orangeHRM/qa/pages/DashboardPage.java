@@ -31,6 +31,9 @@ public class DashboardPage extends BasePage {
 	@FindBy(xpath = "//ul[@class='oxd-main-menu']//li")
 	private List<WebElement> mainMenuItems;
 
+	@FindBy(xpath = "//div[@class='oxd-grid-3 orangehrm-quick-launch']//button")
+	private List<WebElement> quickActions;
+
 	public String getDashboardPageHeader() {
 		try {
 			// Use centralized WaitHelper defined in BasePage to wait for visibility
@@ -134,8 +137,8 @@ public class DashboardPage extends BasePage {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 			// primary locator
-			sourceElements = wait
-					.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//ul[@class='oxd-main-menu']//li")));
+			sourceElements = wait.until(
+					ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//ul[@class='oxd-main-menu']//li")));
 		} catch (Exception e) {
 			// Try a CSS selector fallback with the same longer timeout
 			try {
@@ -148,7 +151,8 @@ public class DashboardPage extends BasePage {
 			}
 		}
 
-		List<WebElement> source = (sourceElements != null && !sourceElements.isEmpty()) ? sourceElements : mainMenuItems;
+		List<WebElement> source = (sourceElements != null && !sourceElements.isEmpty()) ? sourceElements
+				: mainMenuItems;
 
 		if (source != null) {
 			for (WebElement menuItem : source) {
@@ -165,4 +169,22 @@ public class DashboardPage extends BasePage {
 
 		return presentMenuTexts;
 	}
+
+	public List<String> getAllQuickActionNames() {
+		List<String> actionNames = new ArrayList<>();
+		List<WebElement> actions = driver.findElements((By) quickActions);
+		
+		for (WebElement action : actions) {
+			try {
+				String text = action.getText();
+				if (text != null && !text.trim().isEmpty()) {
+					actionNames.add(text.trim());
+				}
+			} catch (Exception e) {
+				// element may be stale or not readable - skip it
+			}
+		}
+		return actionNames;
+	}
+
 }
