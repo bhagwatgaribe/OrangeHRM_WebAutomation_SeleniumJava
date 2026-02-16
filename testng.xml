@@ -21,6 +21,7 @@
 		<parameter name="os" value="windows" />
 		<classes>
 			<class name="com.orangeHRM.qa.testCases.VerifyLoginPageTest" />
+			<class name="com.orangeHRM.qa.testCases.VerifyDashboardPageTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

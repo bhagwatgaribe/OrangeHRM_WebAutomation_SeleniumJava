@@ -19,10 +19,17 @@
       <class name="com.orangeHRM.qa.testCases.VerifyLoginPageTest">
         <methods>
           <include name="setup"/>
-          <include name="TC003_verifyValidAndInvalidLoginFunctionality" invocation-numbers="4"/>
           <include name="tearDown"/>
+          <include name="TC002_verifyValidLoginFunctionality"/>
         </methods>
       </class> <!-- com.orangeHRM.qa.testCases.VerifyLoginPageTest -->
+      <class name="com.orangeHRM.qa.testCases.VerifyDashboardPageTest">
+        <methods>
+          <include name="TC006_verifyAllMenusArePresent"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.orangeHRM.qa.testCases.VerifyDashboardPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

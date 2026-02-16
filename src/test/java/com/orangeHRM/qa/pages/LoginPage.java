@@ -10,27 +10,27 @@ public class LoginPage extends BasePage {
 		super(driver);
 	}
 
+	@FindBy(name = "username")
+	private WebElement txtUserName;
+
+	@FindBy(name = "password")
+	private WebElement txtPassword;
+
+	@FindBy(xpath = "//button[@type='submit']")
+	private WebElement loginBtn;
+
+	@FindBy(xpath = "//p[text()='Invalid credentials']")
+	private WebElement invalidCredentialsMsg;
+
+	@FindBy(xpath = "//div[@class='orangehrm-login-forgot']/child::p")
+	private WebElement forgotPasswordLink;
+
+	@FindBy(xpath = "//div[@class='orangehrm-login-logo']")
+	private WebElement loginPageLogo;
+
 	public String getLoginPageTitle() {
 		return driver.getTitle();
 	}
-
-	@FindBy(name = "username")
-	public WebElement txtUserName;
-
-	@FindBy(name = "password")
-	public WebElement txtPassword;
-
-	@FindBy(xpath = "//button[@type='submit']")
-	public WebElement loginBtn;
-
-	@FindBy(xpath = "//p[text()='Invalid credentials']")
-	public WebElement invalidCredentialsMsg;
-
-	@FindBy(xpath = "//div[@class='orangehrm-login-forgot']/child::p")
-	public WebElement forgotPasswordLink;
-
-	@FindBy(xpath = "//div[@class='orangehrm-login-logo']")
-	public WebElement loginPageLogo;
 
 	public void setUserName(String username) {
 		WebElement el = waitHelper.waitForElementToBeVisible(txtUserName, 10);
