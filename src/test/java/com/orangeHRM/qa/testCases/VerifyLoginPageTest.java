@@ -26,7 +26,7 @@ public class VerifyLoginPageTest extends BaseClass {
 			Assert.assertEquals(actualTitle, expectedTitle, "Login page title does not match expected value.");
 		} catch (Exception e) {
 			Assert.fail("Test case failed due to an exception: " + e.getMessage());
-		}finally {
+		} finally {
 			logger.info("Completed test case: TC001_verifyLoginPageTitle");
 		}
 	}
@@ -50,15 +50,17 @@ public class VerifyLoginPageTest extends BaseClass {
 			Assert.assertEquals(actualHeader, expectedHeader, "Dashboard page header does not match expected value.");
 		} catch (Exception e) {
 			Assert.fail("Test case failed due to an exception: " + e.getMessage());
-		}finally {
+		} finally {
 			logger.info("Completed test case: TC002_verifyValidLoginFunctionality");
 		}
 	}
 
 	/*
-	 * Data is Valid: Login successful, Test Passed Login failed, Test Failed
+	 * Data is Valid: Login successful, Test Passed ------- Login failed, Test
+	 * Failed
 	 * 
-	 * Data is Invalid: Login failed, Test Passed Login successful, Test Failed
+	 * Data is Invalid: Login failed, Test Passed ------- Login successful, Test
+	 * Failed
 	 */
 
 	@Test(dataProvider = "LoginData", dataProviderClass = DataProviders.class, groups = { "DataDriven", "Master" })
@@ -97,7 +99,7 @@ public class VerifyLoginPageTest extends BaseClass {
 			}
 		} catch (Exception e) {
 			Assert.fail("Test case failed due to an exception: " + e.getMessage());
-		}finally {
+		} finally {
 			logger.info("Completed test case: TC003_verifyValidAndInvalidLoginFunctionality");
 		}
 	}
@@ -120,11 +122,11 @@ public class VerifyLoginPageTest extends BaseClass {
 		} catch (Exception e) {
 
 			Assert.fail("Test case failed due to an exception: " + e.getMessage());
-		}finally {
+		} finally {
 			logger.info("Completed test case: TC004_verifyInvalidLoginErrorMessage");
 		}
 	}
-	
+
 	@Test(groups = { "Regression", "Master" })
 	public void TC005_verifyForgotPasswordLink() {
 
@@ -133,19 +135,29 @@ public class VerifyLoginPageTest extends BaseClass {
 			loginPage = new LoginPage(driver);
 			boolean isForgotPasswordLinkDisplayed = loginPage.isForgotPasswordLinkDisplayed();
 
-			Assert.assertTrue(isForgotPasswordLinkDisplayed, "Forgot Password link is not displayed on the login page.");
+			Assert.assertTrue(isForgotPasswordLinkDisplayed,
+					"Forgot Password link is not displayed on the login page.");
 		} catch (Exception e) {
 			Assert.fail("Test case failed due to an exception: " + e.getMessage());
-		}finally {
+		} finally {
 			logger.info("Completed test case: TC005_verifyForgotPasswordLink");
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
+
+	@Test(groups = { "Regression", "Master" })
+	public void TC006_verifyLoginPageLogo() {
+
+		logger.info("Starting test case: TC006_verifyLoginPageLogo");
+		try {
+			loginPage = new LoginPage(driver);
+			boolean isLoginPageLogoDisplayed = loginPage.isLoginPageLogoDisplayed();
+
+			Assert.assertTrue(isLoginPageLogoDisplayed, "Login page logo is not displayed on the login page.");
+		} catch (Exception e) {
+			Assert.fail("Test case failed due to an exception: " + e.getMessage());
+		} finally {
+			logger.info("Completed test case: TC006_verifyLoginPageLogo");
+		}
+	}
+
 }
