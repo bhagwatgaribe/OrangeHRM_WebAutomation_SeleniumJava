@@ -1,0 +1,2 @@
+16:52:30.959 [main] INFO  com.orangeHRM.qa.testCases.VerifyDashboardPageTest - Verifying all main menu items are present. Missing items: []
+16:52:33.268 [main] INFO  com.orangeHRM.qa.testCases.VerifyDashboardPageTest - Completed test case: TC006_verifyAllMenusArePresent

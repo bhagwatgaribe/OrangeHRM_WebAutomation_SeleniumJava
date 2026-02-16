@@ -22,7 +22,8 @@ public class ExtentReportManager implements ITestListener {
 
 	public ExtentSparkReporter sparkReporter;
 	public ExtentReports extent;
-	public ExtentTest test;
+	// Use ThreadLocal to support parallel test execution and per-thread ExtentTest
+	private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
 
 	String repName;
 
@@ -62,20 +63,50 @@ public class ExtentReportManager implements ITestListener {
 		}
 	}
 
+	// Create and store the ExtentTest instance at test start so helpers can access it
+	public void onTestStart(ITestResult result) {
+		try {
+			ExtentTest test = extent.createTest(result.getTestClass().getName() + " : "
+					+ result.getMethod().getMethodName());
+			test.assignCategory(result.getMethod().getGroups());
+			extentTest.set(test);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static ExtentTest getTest() {
+		return extentTest.get();
+	}
+
 	public void onTestSuccess(ITestResult result) {
 
-		test = extent.createTest(result.getTestClass().getName());
-		test.assignCategory(result.getMethod().getGroups());
+		ExtentTest test = extentTest.get();
+		if (test == null) {
+			// fallback - create a test if onTestStart somehow didn't run
+			test = extent.createTest(result.getTestClass().getName() + " : "
+					+ result.getMethod().getMethodName());
+			test.assignCategory(result.getMethod().getGroups());
+			extentTest.set(test);
+		}
 		test.log(Status.PASS, result.getName() + " test got successfully executed");
 	}
 
 	public void onTestFailure(ITestResult result) {
 
-		test = extent.createTest(result.getTestClass().getName());
-		test.assignCategory(result.getMethod().getGroups());
+		ExtentTest test = extentTest.get();
+		if (test == null) {
+			// fallback - create a test if onTestStart somehow didn't run
+			test = extent.createTest(result.getTestClass().getName() + " : "
+					+ result.getMethod().getMethodName());
+			test.assignCategory(result.getMethod().getGroups());
+			extentTest.set(test);
+		}
 
 		test.log(Status.FAIL, result.getName() + " test got failed");
-		test.log(Status.INFO, result.getThrowable().getMessage());
+		if (result.getThrowable() != null) {
+			test.log(Status.INFO, result.getThrowable().getMessage());
+		}
 
 		try {
 			if (BaseClass.driver != null) {
@@ -96,10 +127,18 @@ public class ExtentReportManager implements ITestListener {
 
 	public void onTestSkipped(ITestResult result) {
 
-		test = extent.createTest(result.getTestClass().getName());
-		test.assignCategory(result.getMethod().getGroups());
+		ExtentTest test = extentTest.get();
+		if (test == null) {
+			// fallback - create a test if onTestStart somehow didn't run
+			test = extent.createTest(result.getTestClass().getName() + " : "
+					+ result.getMethod().getMethodName());
+			test.assignCategory(result.getMethod().getGroups());
+			extentTest.set(test);
+		}
 		test.log(Status.SKIP, result.getName() + " test got skipped");
-		test.log(Status.SKIP, result.getThrowable().getMessage());
+		if (result.getThrowable() != null) {
+			test.log(Status.SKIP, result.getThrowable().getMessage());
+		}
 	}
 
 	public void onFinish(ITestContext testContext) {

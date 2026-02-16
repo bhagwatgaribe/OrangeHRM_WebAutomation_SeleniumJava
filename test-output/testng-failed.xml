@@ -16,13 +16,6 @@
       </run>
     </groups>
     <classes>
-      <class name="com.orangeHRM.qa.testCases.VerifyLoginPageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="TC002_verifyValidLoginFunctionality"/>
-        </methods>
-      </class> <!-- com.orangeHRM.qa.testCases.VerifyLoginPageTest -->
       <class name="com.orangeHRM.qa.testCases.VerifyDashboardPageTest">
         <methods>
           <include name="TC006_verifyAllMenusArePresent"/>
