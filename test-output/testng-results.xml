@@ -1,105 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-16T16:50:10 IST" name="Suite" finished-at="2026-02-16T16:52:33 IST" duration-ms="143409">
+  <suite started-at="2026-02-16T20:16:22 IST" name="Suite" finished-at="2026-02-16T20:21:57 IST" duration-ms="335387">
     <groups>
       <group name="Master">
-        <method signature="VerifyDashboardPageTest.TC006_verifyAllMenusArePresent()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyDashboardPageTest@344f4dea]" name="TC006_verifyAllMenusArePresent" class="com.orangeHRM.qa.testCases.VerifyDashboardPageTest"/>
-        <method signature="VerifyLoginPageTest.TC001_verifyLoginPageTitle()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" name="TC001_verifyLoginPageTitle" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
-        <method signature="VerifyLoginPageTest.TC002_verifyValidLoginFunctionality()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" name="TC002_verifyValidLoginFunctionality" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
-        <method signature="VerifyLoginPageTest.TC003_verifyValidAndInvalidLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" name="TC003_verifyValidAndInvalidLoginFunctionality" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
-        <method signature="VerifyLoginPageTest.TC004_verifyInvalidLoginErrorMessage()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" name="TC004_verifyInvalidLoginErrorMessage" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
-        <method signature="VerifyLoginPageTest.TC005_verifyForgotPasswordLink()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" name="TC005_verifyForgotPasswordLink" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
-        <method signature="VerifyLoginPageTest.TC006_verifyLoginPageLogo()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" name="TC006_verifyLoginPageLogo" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
+        <method signature="VerifyDashboardPageTest.TC006_verifyAllMenusArePresent()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyDashboardPageTest@648c94da]" name="TC006_verifyAllMenusArePresent" class="com.orangeHRM.qa.testCases.VerifyDashboardPageTest"/>
+        <method signature="VerifyDashboardPageTest.TC007_verifyQuickLaunchOptions()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyDashboardPageTest@648c94da]" name="TC007_verifyQuickLaunchOptions" class="com.orangeHRM.qa.testCases.VerifyDashboardPageTest"/>
+        <method signature="VerifyLoginPageTest.TC001_verifyLoginPageTitle()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" name="TC001_verifyLoginPageTitle" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
+        <method signature="VerifyLoginPageTest.TC002_verifyValidLoginFunctionality()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" name="TC002_verifyValidLoginFunctionality" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
+        <method signature="VerifyLoginPageTest.TC003_verifyValidAndInvalidLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" name="TC003_verifyValidAndInvalidLoginFunctionality" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
+        <method signature="VerifyLoginPageTest.TC004_verifyInvalidLoginErrorMessage()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" name="TC004_verifyInvalidLoginErrorMessage" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
+        <method signature="VerifyLoginPageTest.TC005_verifyForgotPasswordLink()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" name="TC005_verifyForgotPasswordLink" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
+        <method signature="VerifyLoginPageTest.TC006_verifyLoginPageLogo()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" name="TC006_verifyLoginPageLogo" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
       </group> <!-- Master -->
       <group name="Sanity">
-        <method signature="VerifyLoginPageTest.TC002_verifyValidLoginFunctionality()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" name="TC002_verifyValidLoginFunctionality" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
+        <method signature="VerifyLoginPageTest.TC002_verifyValidLoginFunctionality()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" name="TC002_verifyValidLoginFunctionality" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
       </group> <!-- Sanity -->
       <group name="DataDriven">
-        <method signature="VerifyLoginPageTest.TC003_verifyValidAndInvalidLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" name="TC003_verifyValidAndInvalidLoginFunctionality" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
+        <method signature="VerifyLoginPageTest.TC003_verifyValidAndInvalidLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" name="TC003_verifyValidAndInvalidLoginFunctionality" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
       </group> <!-- DataDriven -->
       <group name="Regression">
-        <method signature="VerifyDashboardPageTest.TC006_verifyAllMenusArePresent()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyDashboardPageTest@344f4dea]" name="TC006_verifyAllMenusArePresent" class="com.orangeHRM.qa.testCases.VerifyDashboardPageTest"/>
-        <method signature="VerifyLoginPageTest.TC001_verifyLoginPageTitle()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" name="TC001_verifyLoginPageTitle" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
-        <method signature="VerifyLoginPageTest.TC004_verifyInvalidLoginErrorMessage()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" name="TC004_verifyInvalidLoginErrorMessage" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
-        <method signature="VerifyLoginPageTest.TC005_verifyForgotPasswordLink()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" name="TC005_verifyForgotPasswordLink" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
-        <method signature="VerifyLoginPageTest.TC006_verifyLoginPageLogo()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" name="TC006_verifyLoginPageLogo" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
+        <method signature="VerifyDashboardPageTest.TC006_verifyAllMenusArePresent()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyDashboardPageTest@648c94da]" name="TC006_verifyAllMenusArePresent" class="com.orangeHRM.qa.testCases.VerifyDashboardPageTest"/>
+        <method signature="VerifyDashboardPageTest.TC007_verifyQuickLaunchOptions()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyDashboardPageTest@648c94da]" name="TC007_verifyQuickLaunchOptions" class="com.orangeHRM.qa.testCases.VerifyDashboardPageTest"/>
+        <method signature="VerifyLoginPageTest.TC001_verifyLoginPageTitle()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" name="TC001_verifyLoginPageTitle" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
+        <method signature="VerifyLoginPageTest.TC004_verifyInvalidLoginErrorMessage()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" name="TC004_verifyInvalidLoginErrorMessage" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
+        <method signature="VerifyLoginPageTest.TC005_verifyForgotPasswordLink()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" name="TC005_verifyForgotPasswordLink" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
+        <method signature="VerifyLoginPageTest.TC006_verifyLoginPageLogo()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" name="TC006_verifyLoginPageLogo" class="com.orangeHRM.qa.testCases.VerifyLoginPageTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2026-02-16T16:50:10 IST" name="Test" finished-at="2026-02-16T16:52:33 IST" duration-ms="143409">
+    <test started-at="2026-02-16T20:16:22 IST" name="Test" finished-at="2026-02-16T20:21:57 IST" duration-ms="335387">
       <class name="com.orangeHRM.qa.testCases.VerifyDashboardPageTest">
-        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyDashboardPageTest@344f4dea]" started-at="2026-02-16T16:52:20 IST" name="setup" finished-at="2026-02-16T16:52:26 IST" duration-ms="6311" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyDashboardPageTest@648c94da]" started-at="2026-02-16T20:21:15 IST" name="setup" finished-at="2026-02-16T20:21:31 IST" duration-ms="15911" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6339e604]]>
+                <![CDATA[org.testng.TestRunner@878feb2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC006_verifyAllMenusArePresent()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyDashboardPageTest@344f4dea]" started-at="2026-02-16T16:52:26 IST" name="TC006_verifyAllMenusArePresent" finished-at="2026-02-16T16:52:33 IST" duration-ms="6753" status="PASS">
+        <test-method signature="TC006_verifyAllMenusArePresent()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyDashboardPageTest@648c94da]" started-at="2026-02-16T20:21:31 IST" name="TC006_verifyAllMenusArePresent" finished-at="2026-02-16T20:21:40 IST" duration-ms="8719" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC006_verifyAllMenusArePresent -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyDashboardPageTest@344f4dea]" started-at="2026-02-16T16:52:33 IST" name="tearDown" finished-at="2026-02-16T16:52:33 IST" duration-ms="347" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyDashboardPageTest@648c94da]" started-at="2026-02-16T20:21:40 IST" name="tearDown" finished-at="2026-02-16T20:21:40 IST" duration-ms="465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyDashboardPageTest@648c94da]" started-at="2026-02-16T20:21:40 IST" name="setup" finished-at="2026-02-16T20:21:55 IST" duration-ms="14416" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@878feb2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC007_verifyQuickLaunchOptions()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyDashboardPageTest@648c94da]" started-at="2026-02-16T20:21:55 IST" name="TC007_verifyQuickLaunchOptions" finished-at="2026-02-16T20:21:57 IST" duration-ms="1983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC007_verifyQuickLaunchOptions -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyDashboardPageTest@648c94da]" started-at="2026-02-16T20:21:57 IST" name="tearDown" finished-at="2026-02-16T20:21:57 IST" duration-ms="557" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangeHRM.qa.testCases.VerifyDashboardPageTest -->
       <class name="com.orangeHRM.qa.testCases.VerifyLoginPageTest">
-        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:50:10 IST" name="setup" finished-at="2026-02-16T16:50:17 IST" duration-ms="6558" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:16:23 IST" name="setup" finished-at="2026-02-16T20:16:36 IST" duration-ms="12918" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6339e604]]>
+                <![CDATA[org.testng.TestRunner@878feb2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC001_verifyLoginPageTitle()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:50:17 IST" name="TC001_verifyLoginPageTitle" finished-at="2026-02-16T16:50:17 IST" duration-ms="77" status="PASS">
+        <test-method signature="TC001_verifyLoginPageTitle()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:16:36 IST" name="TC001_verifyLoginPageTitle" finished-at="2026-02-16T20:16:36 IST" duration-ms="177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC001_verifyLoginPageTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:50:17 IST" name="tearDown" finished-at="2026-02-16T16:50:17 IST" duration-ms="274" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:16:36 IST" name="tearDown" finished-at="2026-02-16T20:16:36 IST" duration-ms="347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:50:17 IST" name="setup" finished-at="2026-02-16T16:50:24 IST" duration-ms="6733" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:16:36 IST" name="setup" finished-at="2026-02-16T20:17:02 IST" duration-ms="25786" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6339e604]]>
+                <![CDATA[org.testng.TestRunner@878feb2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC002_verifyValidLoginFunctionality()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:50:24 IST" name="TC002_verifyValidLoginFunctionality" finished-at="2026-02-16T16:50:28 IST" duration-ms="3961" status="PASS">
+        <test-method signature="TC002_verifyValidLoginFunctionality()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:17:02 IST" name="TC002_verifyValidLoginFunctionality" finished-at="2026-02-16T20:17:07 IST" duration-ms="4705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC002_verifyValidLoginFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:50:28 IST" name="tearDown" finished-at="2026-02-16T16:50:28 IST" duration-ms="336" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:17:07 IST" name="tearDown" finished-at="2026-02-16T20:17:07 IST" duration-ms="316" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:50:29 IST" name="setup" finished-at="2026-02-16T16:50:35 IST" duration-ms="5906" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:17:09 IST" name="setup" finished-at="2026-02-16T20:17:33 IST" duration-ms="23525" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6339e604]]>
+                <![CDATA[org.testng.TestRunner@878feb2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC003_verifyValidAndInvalidLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:50:35 IST" name="TC003_verifyValidAndInvalidLoginFunctionality" data-provider="LoginData" finished-at="2026-02-16T16:50:41 IST" duration-ms="6626" status="PASS">
+        <test-method signature="TC003_verifyValidAndInvalidLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:17:33 IST" name="TC003_verifyValidAndInvalidLoginFunctionality" data-provider="LoginData" finished-at="2026-02-16T20:17:41 IST" duration-ms="8491" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -120,22 +141,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC003_verifyValidAndInvalidLoginFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:50:41 IST" name="tearDown" finished-at="2026-02-16T16:50:42 IST" duration-ms="332" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:17:41 IST" name="tearDown" finished-at="2026-02-16T20:17:42 IST" duration-ms="676" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:50:42 IST" name="setup" finished-at="2026-02-16T16:50:48 IST" duration-ms="6235" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:17:42 IST" name="setup" finished-at="2026-02-16T20:18:10 IST" duration-ms="28492" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6339e604]]>
+                <![CDATA[org.testng.TestRunner@878feb2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC003_verifyValidAndInvalidLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:50:48 IST" name="TC003_verifyValidAndInvalidLoginFunctionality" data-provider="LoginData" finished-at="2026-02-16T16:50:59 IST" duration-ms="11525" status="PASS">
+        <test-method signature="TC003_verifyValidAndInvalidLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:18:10 IST" name="TC003_verifyValidAndInvalidLoginFunctionality" data-provider="LoginData" finished-at="2026-02-16T20:18:23 IST" duration-ms="12845" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -156,22 +177,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC003_verifyValidAndInvalidLoginFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:50:59 IST" name="tearDown" finished-at="2026-02-16T16:51:00 IST" duration-ms="400" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:18:23 IST" name="tearDown" finished-at="2026-02-16T20:18:24 IST" duration-ms="526" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:51:00 IST" name="setup" finished-at="2026-02-16T16:51:07 IST" duration-ms="6774" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:18:24 IST" name="setup" finished-at="2026-02-16T20:18:45 IST" duration-ms="20921" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6339e604]]>
+                <![CDATA[org.testng.TestRunner@878feb2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC003_verifyValidAndInvalidLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:51:07 IST" name="TC003_verifyValidAndInvalidLoginFunctionality" data-provider="LoginData" finished-at="2026-02-16T16:51:18 IST" duration-ms="11284" status="PASS">
+        <test-method signature="TC003_verifyValidAndInvalidLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:18:45 IST" name="TC003_verifyValidAndInvalidLoginFunctionality" data-provider="LoginData" finished-at="2026-02-16T20:18:59 IST" duration-ms="14443" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -192,22 +213,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC003_verifyValidAndInvalidLoginFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:51:18 IST" name="tearDown" finished-at="2026-02-16T16:51:18 IST" duration-ms="355" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:18:59 IST" name="tearDown" finished-at="2026-02-16T20:19:00 IST" duration-ms="498" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:51:18 IST" name="setup" finished-at="2026-02-16T16:51:25 IST" duration-ms="6641" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:19:00 IST" name="setup" finished-at="2026-02-16T20:19:12 IST" duration-ms="12175" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6339e604]]>
+                <![CDATA[org.testng.TestRunner@878feb2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC003_verifyValidAndInvalidLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:51:25 IST" name="TC003_verifyValidAndInvalidLoginFunctionality" data-provider="LoginData" finished-at="2026-02-16T16:51:37 IST" duration-ms="11897" status="PASS">
+        <test-method signature="TC003_verifyValidAndInvalidLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:19:12 IST" name="TC003_verifyValidAndInvalidLoginFunctionality" data-provider="LoginData" finished-at="2026-02-16T20:19:26 IST" duration-ms="14405" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -228,22 +249,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC003_verifyValidAndInvalidLoginFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:51:37 IST" name="tearDown" finished-at="2026-02-16T16:51:37 IST" duration-ms="380" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:19:26 IST" name="tearDown" finished-at="2026-02-16T20:19:27 IST" duration-ms="383" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:51:37 IST" name="setup" finished-at="2026-02-16T16:51:44 IST" duration-ms="6721" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:19:27 IST" name="setup" finished-at="2026-02-16T20:19:43 IST" duration-ms="16372" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6339e604]]>
+                <![CDATA[org.testng.TestRunner@878feb2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC003_verifyValidAndInvalidLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:51:44 IST" name="TC003_verifyValidAndInvalidLoginFunctionality" data-provider="LoginData" finished-at="2026-02-16T16:51:50 IST" duration-ms="6248" status="PASS">
+        <test-method signature="TC003_verifyValidAndInvalidLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:19:43 IST" name="TC003_verifyValidAndInvalidLoginFunctionality" data-provider="LoginData" finished-at="2026-02-16T20:20:01 IST" duration-ms="17675" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -264,64 +285,64 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC003_verifyValidAndInvalidLoginFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:51:50 IST" name="tearDown" finished-at="2026-02-16T16:51:50 IST" duration-ms="364" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:20:01 IST" name="tearDown" finished-at="2026-02-16T20:20:01 IST" duration-ms="451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:51:50 IST" name="setup" finished-at="2026-02-16T16:51:59 IST" duration-ms="8993" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:20:01 IST" name="setup" finished-at="2026-02-16T20:20:26 IST" duration-ms="25122" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6339e604]]>
+                <![CDATA[org.testng.TestRunner@878feb2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC004_verifyInvalidLoginErrorMessage()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:51:59 IST" name="TC004_verifyInvalidLoginErrorMessage" finished-at="2026-02-16T16:52:03 IST" duration-ms="3892" status="PASS">
+        <test-method signature="TC004_verifyInvalidLoginErrorMessage()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:20:26 IST" name="TC004_verifyInvalidLoginErrorMessage" finished-at="2026-02-16T20:20:31 IST" duration-ms="5063" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC004_verifyInvalidLoginErrorMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:52:03 IST" name="tearDown" finished-at="2026-02-16T16:52:04 IST" duration-ms="277" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:20:31 IST" name="tearDown" finished-at="2026-02-16T20:20:32 IST" duration-ms="443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:52:04 IST" name="setup" finished-at="2026-02-16T16:52:10 IST" duration-ms="6710" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:20:32 IST" name="setup" finished-at="2026-02-16T20:20:49 IST" duration-ms="17350" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6339e604]]>
+                <![CDATA[org.testng.TestRunner@878feb2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC005_verifyForgotPasswordLink()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:52:10 IST" name="TC005_verifyForgotPasswordLink" finished-at="2026-02-16T16:52:11 IST" duration-ms="1099" status="PASS">
+        <test-method signature="TC005_verifyForgotPasswordLink()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:20:49 IST" name="TC005_verifyForgotPasswordLink" finished-at="2026-02-16T20:20:51 IST" duration-ms="1730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC005_verifyForgotPasswordLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:52:11 IST" name="tearDown" finished-at="2026-02-16T16:52:12 IST" duration-ms="296" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:20:51 IST" name="tearDown" finished-at="2026-02-16T20:20:51 IST" duration-ms="302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:52:12 IST" name="setup" finished-at="2026-02-16T16:52:18 IST" duration-ms="6458" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:20:51 IST" name="setup" finished-at="2026-02-16T20:21:13 IST" duration-ms="22213" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6339e604]]>
+                <![CDATA[org.testng.TestRunner@878feb2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC006_verifyLoginPageLogo()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:52:18 IST" name="TC006_verifyLoginPageLogo" finished-at="2026-02-16T16:52:19 IST" duration-ms="1167" status="PASS">
+        <test-method signature="TC006_verifyLoginPageLogo()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:21:13 IST" name="TC006_verifyLoginPageLogo" finished-at="2026-02-16T20:21:15 IST" duration-ms="1721" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC006_verifyLoginPageLogo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@b2c5e07]" started-at="2026-02-16T16:52:19 IST" name="tearDown" finished-at="2026-02-16T16:52:20 IST" duration-ms="316" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangeHRM.qa.testCases.VerifyLoginPageTest@3c7c886c]" started-at="2026-02-16T20:21:15 IST" name="tearDown" finished-at="2026-02-16T20:21:15 IST" duration-ms="294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

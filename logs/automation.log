@@ -1,2 +1,5 @@
-16:52:30.959 [main] INFO  com.orangeHRM.qa.testCases.VerifyDashboardPageTest - Verifying all main menu items are present. Missing items: []
-16:52:33.268 [main] INFO  com.orangeHRM.qa.testCases.VerifyDashboardPageTest - Completed test case: TC006_verifyAllMenusArePresent
+20:21:37.856 [main] INFO  com.orangeHRM.qa.testCases.VerifyDashboardPageTest - Verifying all main menu items are present. Missing items: []
+20:21:40.482 [main] INFO  com.orangeHRM.qa.testCases.VerifyDashboardPageTest - Completed test case: TC006_verifyAllMenusArePresent
+20:21:40.953 [main] INFO  com.orangeHRM.qa.testCases.VerifyDashboardPageTest - Initializing WebDriver and launching the application.
+20:21:55.370 [main] INFO  com.orangeHRM.qa.testCases.VerifyDashboardPageTest - Starting test case: TC007_verifyQuickLaunchOptions
+20:21:57.245 [main] ERROR com.orangeHRM.qa.testCases.VerifyDashboardPageTest - Failed to capture/attach screenshot for missing quick launch options: class jdk.proxy2.$Proxy31 cannot be cast to class org.openqa.selenium.By (jdk.proxy2.$Proxy31 is in module jdk.proxy2 of loader 'app'; org.openqa.selenium.By is in unnamed module of loader 'app')

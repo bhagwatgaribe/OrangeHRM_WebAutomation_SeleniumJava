@@ -16,13 +16,13 @@
       </run>
     </groups>
     <classes>
-      <class name="com.orangeHRM.qa.testCases.VerifyDashboardPageTest">
+      <class name="com.orangeHRM.qa.testCases.VerifyLoginPageTest">
         <methods>
-          <include name="TC006_verifyAllMenusArePresent"/>
+          <include name="TC003_verifyValidAndInvalidLoginFunctionality" invocation-numbers="4"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.orangeHRM.qa.testCases.VerifyDashboardPageTest -->
+      </class> <!-- com.orangeHRM.qa.testCases.VerifyLoginPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -109,8 +109,8 @@ public class ExtentReportManager implements ITestListener {
 		}
 
 		try {
-			if (BaseClass.driver != null) {
-				String imgPath = new CaptureScreenshots().captureScreen(BaseClass.driver, result.getName());
+			if (BaseClass.getDriver() != null) {
+				String imgPath = new CaptureScreenshots().captureScreen(BaseClass.getDriver(), result.getName());
 				if (imgPath != null) {
 					test.addScreenCaptureFromPath(imgPath);
 				} else {
